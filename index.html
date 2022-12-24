@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Survey form</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Car survey form</h1>
+    <p id="description">What cars do you like?</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name: </label><input id="name" type="text" required placeholder="Enter your name please"/>
+        <label id="email-label">Email: </label><input id="email" type="email" required placeholder="Enter your email please"/>
+        <label id="number-label">Phone number: </label><input id="number" type="number" min="9" max="14" placeholder="Enter your phone number please"/>
+      </fieldset>
+      <fieldset>
+        I like:
+        <select id="dropdown">
+          <option>(select one option)</option>
+          <option>Cars</option>
+          <option>Motorcycles</option>
+          <option>Trucks</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        Select your budget:
+        <br>
+        <input type="radio" name="radio-select" class="unset" id="radio1" value="radio1"/><label for="radio1" class="unset"> Under 20k$</label>
+        <br>
+        <input type="radio" name="radio-select" class="unset" id="radio2" value="radio2"/>
+        <label for="radio2" class="unset">Over 20k$</label>
+      </fieldset>
+      <fieldset>
+        The car has included (if any):
+        <br>
+        <input type="checkbox" value="first" id="first" class="unset"/><label for="first"> Automatic transmission</label>
+        <br>
+        <input type="checkbox" value="second" id="second" class="unset"/><label for="second"> Four-wheel drive</label>
+        <br>
+        <input type="checkbox" value="third" id="third" class="unset"/>
+  <label for="third">Front and back camera</label>
+        <br>
+  <input type="checkbox" value="fourth" id="fourth" class="unset"/>
+  <label for="fourth">Custom suspension</label>
+      </fieldset>
+      <fieldset>
+        <label>
+          <textarea rows="3" cols="30" placeholder="Share your additional thoughts about your dream car.."></textarea>
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit"/>
+    </form>
+  </body>
+</html>
